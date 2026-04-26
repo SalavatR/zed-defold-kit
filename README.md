@@ -1,4 +1,4 @@
-# Defold Kit (Zed)
+# Defold Kit
 
 Defold API and native extension annotations injected into the Lua language server in [Zed](https://zed.dev).
 

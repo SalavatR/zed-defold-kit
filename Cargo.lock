@@ -48,8 +48,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "defold_kit_zed"
-version = "0.0.1"
+name = "defold_kit"
+version = "0.1.0"
 dependencies = [
  "zed_extension_api",
 ]
