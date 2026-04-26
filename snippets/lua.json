@@ -1,0 +1,131 @@
+{
+    "Defold script file template": {
+        "prefix": "script",
+        "body": [
+            "---@class ${1:script}",
+            "",
+            "---@package",
+            "---@param self ${1:script}",
+            "function init(self)",
+            "\t",
+            "end",
+            "",
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param dt number",
+            "function update(self, dt)",
+            "\t",
+            "end",
+            "",
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param message_id hash",
+            "---@param message table",
+            "---@param sender url",
+            "function on_message(self, message_id, message, sender)",
+            "\t",
+            "end",
+            "",
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param action_id hash",
+            "---@param action on_input.action",
+            "---@return boolean|nil",
+            "function on_input(self, action_id, action)",
+            "\t",
+            "end",
+            "",
+            "---@package",
+            "---@param self ${1:script}",
+            "function final(self)",
+            "\t",
+            "end"
+        ],
+        "description": "Defold script file with annotated lifecycle methods"
+    },
+    "init": {
+        "prefix": "init(self)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "function init(self)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script init() function"
+    },
+    "update": {
+        "prefix": "update(self, dt)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param dt number",
+            "function update(self, dt)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script update() function"
+    },
+    "fixed_update": {
+        "prefix": "fixed_update(self, dt)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param dt number",
+            "function fixed_update(self, dt)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script fixed_update() function"
+    },
+    "on_message": {
+        "prefix": "on_message(self, message_id, message, sender)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param message_id hash",
+            "---@param message table",
+            "---@param sender url",
+            "function on_message(self, message_id, message, sender)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script on_message() function"
+    },
+    "on_input": {
+        "prefix": "on_input(self, action_id, action)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "---@param action_id hash",
+            "---@param action on_input.action",
+            "---@return boolean|nil",
+            "function on_input(self, action_id, action)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script on_input() function"
+    },
+    "final": {
+        "prefix": "final(self)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "function final(self)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script final() function"
+    },
+    "on_reload": {
+        "prefix": "on_reload(self)",
+        "body": [
+            "---@package",
+            "---@param self ${1:script}",
+            "function on_reload(self)",
+            "\t${2}",
+            "end"
+        ],
+        "description": "Defold script on_reload() function"
+    }
+}
