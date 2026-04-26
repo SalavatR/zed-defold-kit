@@ -23,17 +23,26 @@ Until published to the Zed extension registry:
 
 ## Setup
 
-Add this once to your Zed settings (project's `.zed/settings.json` or global `~/.config/zed/settings.json`) so `.script` / `.gui_script` / `.render_script` / `.editor_script` files are treated as Lua:
+Add this to your project's `.zed/settings.json` (or globally to `~/.config/zed/settings.json`):
 
 ```json
 {
   "file_types": {
     "Lua": ["script", "gui_script", "render_script", "editor_script"]
+  },
+  "lsp": {
+    "lua-language-server": {
+      "settings": {
+        "defold_kit": {
+          "editor_path": "/Applications/Defold.app"
+        }
+      }
+    }
   }
 }
 ```
 
-That's it — open any file in a Defold project (one with a `game.project` at the root) and Defold completions will be available.
+The `file_types` block tells Zed to treat `.script` / `.gui_script` / `.render_script` / `.editor_script` as Lua. The `defold_kit.editor_path` block lets the extension read the exact Defold version from the editor's config so it pulls matching API annotations. `editor_path` is optional — without it the extension falls back to the latest annotations release.
 
 ## Configuration
 
